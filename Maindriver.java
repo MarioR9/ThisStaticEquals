@@ -14,31 +14,24 @@ import javafx.stage.Stage;
             int numCars = Integer.parseInt(input.getResult());
             Car[] car = new Car[(numCars)];
             int carNum=0;
-
             for (int count = 1; count<=numCars; count++){
-
                 input.setHeaderText("Car Color");
                 input.setContentText("Enter the color for car " + count);
                 input.showAndWait();
                 String color = input.getResult();
-
                 input.setHeaderText("Car Horsepower");
                 input.setContentText("Enter the horsepower for car " + count);
                 input.showAndWait();
                 int horsepower = Integer.parseInt(input.getResult());
-
                 input.setHeaderText("Car Engine Size");
                 input.setContentText("Enter the engine size for car " + count);
                 input.showAndWait();
                 double enginesize = Double.parseDouble(input.getResult());
-
                 input.setHeaderText("Car Make");
                 input.setContentText("Enter the make for car " + count);
                 input.showAndWait();
                 String make = input.getResult();
-
                 car[carNum] = new Car(color,horsepower,enginesize,make);
-
                 output.setContentText(carNum+" "+car[carNum]);
                 output.showAndWait();
                 carNum++;
@@ -54,8 +47,7 @@ import javafx.stage.Stage;
             input.showAndWait();
             output.setHeaderText("Are the two cars equal?");
             output.setContentText(""+car[numCompare].equals(car[Integer.parseInt(input.getResult())-1]));
-
-            output.showAndWait();
+`           output.showAndWait();
             System.exit(0);
 
         }
