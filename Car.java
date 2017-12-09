@@ -64,11 +64,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "color='" + color + '\'' +
-                ", horsepower=" + horsepower +
-                ", enginesize=" + enginesize +
-                ", make='" + make + '\'' +
-                '}';
+        return "Car{" +"color='" + color + '\'' + ", horsepower=" + horsepower + ", enginesize=" + enginesize + ", make='" + make + '\'' + '}';
+    
     }
 }
